@@ -12,8 +12,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/name"
-        android:textAlignment="center"
-        app:drawableBottomCompat="@android:drawable/btn_star_big_on" />
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Try your special name that your mother calls you"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textPersonName|text" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/yellow_start"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
 
     <ScrollView
         android:id="@+id/bio_scroll"
